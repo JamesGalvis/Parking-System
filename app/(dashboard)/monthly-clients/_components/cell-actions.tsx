@@ -99,7 +99,7 @@ export function CellAction({ data }: CellActionProps) {
           size="icon"
           className={cn(
             "group hover:bg-red-500",
-            role !== "SuperAdmin" && role !== "Admin" && "hidden"
+            // role !== "SuperAdmin" && role !== "Admin" && "hidden"
           )}
           onClick={() => setOpenAlertConfirmation(true)}
         >

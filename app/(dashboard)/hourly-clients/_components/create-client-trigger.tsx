@@ -2,7 +2,7 @@
 
 import { Modal } from "@/components/common/modal";
 import { Button } from "@/components/ui/button";
-import { Clock, Plus } from "lucide-react";
+import { Clock, Plus, UserRoundPlus } from "lucide-react";
 import { useEffect, useState } from "react";
 import { HourlyClientForm } from "./hourly-client-form";
 import { getClientTypes, getVehicleTypes } from "@/actions/business-config";
@@ -71,12 +71,13 @@ export function CreateClientTrigger({ isGlobal }: CreateClientTriggerProps) {
         <Button
           variant="primary"
           className={cn(
-            "rounded-full size-9 p-0",
+            "rounded-full px-4",
             pathname === "/hourly-clients" && "hidden"
           )}
           onClick={() => setOpen(true)}
         >
-          <Clock className=" shrink-0" />
+          <UserRoundPlus className=" shrink-0" />
+          Nuevo cliente
         </Button>
       )}
     </>

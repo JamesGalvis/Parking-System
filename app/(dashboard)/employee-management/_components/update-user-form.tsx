@@ -131,7 +131,7 @@ export function UpdateUserForm({
                   <Input
                     type="email"
                     placeholder="Ingresa tu correo"
-                    disabled={isSubmitting}
+                    disabled
                     className={cn(
                       fieldState.invalid &&
                         "focus-visible:ring-[#ef4444] border-[#ef4444]"
